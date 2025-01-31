@@ -6,7 +6,7 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 01:12:14 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 02:01:50 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 02:14:36 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ int	print_ptr(void *ptr, const char *base, int fd)
 	if (ptr)
 		return (print_str("0x", fd) + us_to_hex((unsigned long)ptr, base, fd));
 	else
-		return (print_str("null", fd));
+		return (print_str("0x0", fd));
 }
