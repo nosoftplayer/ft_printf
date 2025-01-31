@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 static int	unsigned_to_hex(unsigned int number, const char *base, int fd)
 {

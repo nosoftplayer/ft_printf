@@ -46,8 +46,9 @@ int	ft_printf(const char *format, ...)
 int main(void)
 {
 	// char *i = NULL;
-	int p    =    printf("%%\n", NULL);
-	int ft_p = ft_printf("%%\n", NULL);
+	int p    =    printf(" %p \n", (void *)0);
+	//printf("%d\n", p);
+	int ft_p = ft_printf(" %p \n", (void *)0);
+	//printf("%d\n", ft_p); 
 	printf("int p     = %d\nint ft_p  = %d\n", p, ft_p);
-}
-*/
+}*/

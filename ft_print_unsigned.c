@@ -17,6 +17,8 @@ static int	digits_count(unsigned int n)
 	int	i;
 
 	i = 0;
+	if (n == 0)
+		++i;
 	while (n != 0)
 	{
 		n = n / 10;
@@ -29,11 +31,6 @@ static void	print_nbr(unsigned int n, int fd)
 {
 	char	c;
 
-	if (n < 0)
-	{
-		ft_putstr_fd("-", fd);
-		n = -n;
-	}
 	if (n >= 10)
 		print_nbr(n / 10, fd);
 	c = (n % 10) + '0';

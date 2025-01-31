@@ -25,8 +25,7 @@ static int	us_to_hex(unsigned long number, const char *base, int fd)
 
 int	print_ptr(void *ptr, const char *base, int fd)
 {
-	if (ptr)
-		return (print_str("0x", fd) + us_to_hex((unsigned long)ptr, base, fd));
-	else
+	if (!ptr)
 		return (print_str("0x0", fd));
+	return (print_str("0x", fd) + us_to_hex((unsigned long)ptr, base, fd));
 }
