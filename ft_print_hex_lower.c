@@ -6,7 +6,7 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 00:41:21 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 01:31:00 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 02:00:31 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	unsigned_to_hex(unsigned int number, const char *base, int fd)
 	return (++size);
 }
 
-int	print_hex_lower(unsigned int number, const char *base, int fd)
+int	print_hex_lower(unsigned int number, int fd)
 {
-	return (unsigned_to_hex(number, base, fd));
+	return (unsigned_to_hex(number, "0123456789abcdef", fd));
 }

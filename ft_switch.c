@@ -6,13 +6,13 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 00:10:41 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 01:40:30 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 02:02:26 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_switch(char spf, va_list args, int fd, const char *base)
+int	ft_switch(char spf, va_list args, int fd)
 {
 	if (spf == '%')
 		ft_putchar_fd(spf, fd);
@@ -25,11 +25,11 @@ int	ft_switch(char spf, va_list args, int fd, const char *base)
 	else if (spf == 'u')
 		return (print_unsigned(va_arg(args, unsigned int), fd));
 	else if (spf == 'x')
-		return (print_hex_lower(va_arg(args, unsigned int), base, fd));
+		return (print_hex_lower(va_arg(args, unsigned int), fd));
 	else if (spf == 'X')
-		return (print_hex_upper(va_arg(args, unsigned int), base, fd));
+		return (print_hex_upper(va_arg(args, unsigned int), fd));
 	else if (spf == 'p')
-		return (print_ptr(va_arg(args, void *), base, fd));
+		return (print_ptr(va_arg(args, void *), "0123456789abcdef", fd));
 	else if (spf == '%')
 		ft_putchar_fd(spf, fd);
 	return (1);

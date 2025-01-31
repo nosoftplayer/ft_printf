@@ -6,7 +6,7 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 00:10:41 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 01:41:55 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 02:04:52 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			++format;
-			size = size + ft_switch(*format, args, fd, "0123456789abcdef");
+			size = size + ft_switch(*format, args, fd);
 		}
 		else
 		{
@@ -45,11 +45,10 @@ int	ft_printf(const char *format, ...)
 
 int main(void)
 {
-	char i[] = "hello world!";
-	char *ptr1 = i;
-	char *ptr2 = i;
-	int p    =    printf("%p\n", ptr1);
-	int ft_p = ft_printf("%p\n", ptr2);
+	int i = 1234;
+	int k = 1234;
+	int p    =    printf("%p\n", &i);
+	int ft_p = ft_printf("%p\n", &i);
 	printf("int p     = %d\nint ft_p  = %d\n", p, ft_p);
 }
 */
