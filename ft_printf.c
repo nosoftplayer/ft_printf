@@ -6,7 +6,7 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 00:10:41 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 20:04:57 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 20:49:39 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ int	ft_printf(const char *format, ...)
 int main(void)
 {
 	// char *i = NULL;
-	int p    =    printf(" %p \n", (void *)0);
-	//printf("%d\n", p);
-	int ft_p = ft_printf(" %p \n", (void *)0);
+	//printf(" %% \n");
+	int p =  printf("%%\n");
+	int ft_p = ft_printf("%%\n");
 	//printf("%d\n", ft_p); 
 	printf("int p     = %d\nint ft_p  = %d\n", p, ft_p);
 }

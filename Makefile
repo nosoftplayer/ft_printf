@@ -4,7 +4,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -I./libft
 
-AR = ar rcs
+AR = ar -rcs
 
 SRCS = ft_printf.c ft_switch.c ft_print_char.c ft_print_str.c ft_print_int.c ft_print_unsigned.c \
 		ft_print_hex_lower.c ft_print_hex_upper.c ft_print_ptr.c
