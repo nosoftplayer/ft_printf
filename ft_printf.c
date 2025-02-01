@@ -6,7 +6,7 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 00:10:41 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 02:15:45 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/01 20:04:57 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ int main(void)
 	int ft_p = ft_printf(" %p \n", (void *)0);
 	//printf("%d\n", ft_p); 
 	printf("int p     = %d\nint ft_p  = %d\n", p, ft_p);
-}*/
+}
+*/
