@@ -40,16 +40,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (size);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	// char *i = NULL;
-	//printf(" %% \n");
-	int p =  printf("%%\n");
-	int ft_p = ft_printf("%%\n");
-	//printf("%d\n", ft_p); 
-	printf("int p     = %d\nint ft_p  = %d\n", p, ft_p);
-}
-*/
