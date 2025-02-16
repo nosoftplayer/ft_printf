@@ -6,14 +6,14 @@
 /*   By: miyolchy <miyolchy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 00:08:55 by miyolchy          #+#    #+#             */
-/*   Updated: 2025/02/01 02:03:11 by miyolchy         ###   ########.fr       */
+/*   Updated: 2025/02/16 21:45:23 by miyolchy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include <stdarg.h>
 
 int	ft_printf(const char *format, ...);
