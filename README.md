@@ -7,6 +7,7 @@
   <!-- Short Description -->
   <p align="center">
 	  <b>42 Yerevan</b><br>
+	  <b>(francinette full OK)</b><br>
   </p>
 
   <h3>
